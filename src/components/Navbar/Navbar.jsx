@@ -75,19 +75,19 @@ const Navbar = () => {
             />
             <ul className="nav__menu--smallscreen ">
               <li className="nav__items">
-                <a href="">Home</a>
+                <a href="#">Home</a>
               </li>
               <li className="nav__items">
-                <a href="">Pages</a>
+                <a href="#">Pages</a>
               </li>
               <li className="nav__items">
-                <a href="">Contact Us</a>
+                <a href="#">Contact Us</a>
               </li>
               <li className="nav__items">
-                <a href="">Blog</a>
+                <a href="#">Blog</a>
               </li>
               <li className="nav__items">
-                <a href="">Landing</a>
+                <a href="#">Landing</a>
               </li>
             </ul>
           </div>

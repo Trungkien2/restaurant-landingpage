@@ -1,0 +1,74 @@
+.specialMenu{
+    flex-direction: column;
+    background-color: #0C0C0C;
+    &__title{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__menu{
+        width: 100%;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        &-heading{
+            font-family: 'Cormorant Upright', serif;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 58.5px;
+            color: white;
+            letter-spacing: 0.04rem;
+        }
+        &-wine,&-cocktails{
+            flex: 1;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &-img{
+            width: 410px;
+            margin: 0 2rem;
+            img{
+                width: 100%;
+            }
+        }
+
+        &-items{
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width:2000px){
+    
+}
+
+@media screen and(max-width:1150px){
+    .specialMenu{
+        &__menu{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width:650px){
+    .specialMenu{
+      &__menu{
+        &-img{
+            width: 100%;
+          }
+
+          &-heading{
+           font-size: 35px;
+        }
+      }
+    }
+}

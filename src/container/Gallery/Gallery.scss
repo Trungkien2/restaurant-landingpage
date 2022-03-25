@@ -1,0 +1,138 @@
+.gallery{
+    display: flex;
+    flex-direction: row;
+    background-color: #0C0C0C;
+
+    padding: 4rem 0 4rem 6rem;
+
+    &__content{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        min-width: 500px;
+        padding-right: 2rem;
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+
+    &__img{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        max-width: 50%;
+        position: relative;
+        &-container{
+            display: flex;
+            flex-direction: row;
+            width: max-content;
+            overflow: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+
+        &-card{
+            position: relative;
+            min-width: 301px;
+            height: 447px;
+            margin-right: 2rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 1;
+                transition: .5s ease ;
+            }
+
+            &:hover img{
+                opacity: 0.35;
+            }
+        }
+        &-icons{
+            position: absolute;
+            color: white;
+            font-size: 2rem;
+            opacity: 0.5;
+            transition: .5s ease ;
+            cursor: pointer;
+        }
+
+        &-arrow{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+           
+            position: absolute;
+            top: 50%;
+        }
+    }
+
+    &__arrow-icons{
+        color : #DADA87;
+        font-size: 2rem;
+        cursor: pointer;
+        background-color: #0C0C0C;
+        border-radius: 5px;
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+@media screen and(min-width:2000px) {
+    .gallery{
+        &__content{
+            min-width: 1000px;
+            padding-right: 4rem;
+        }
+        &__img{
+            &-card{
+                min-width: 400px;
+                height: 550px;
+            }
+        }
+    }
+    
+}
+
+@media screen and(max-width:1150px) {
+    .gallery{
+      flex-direction: column;
+      &__img{
+        max-width: 100%;
+        margin: 5rem 0;
+    }
+    }
+    
+}
+@media screen and(max-width:850px) {
+    .gallery{
+     padding: 4rem 0 4rem 4rem;
+    }
+    
+}
+@media screen and(max-width:650px) {
+    .gallery{
+        &__content{
+            min-width: 100%;
+        }
+        padding: 4rem 0 4rem 2rem;
+        &__img{
+            &-card{
+                min-width: 240px;
+                height: 320px;
+            }
+        }
+
+    }
+    
+}

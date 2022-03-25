@@ -1,0 +1,37 @@
+.chef{
+    &-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 5rem ;
+
+        &__quote{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            img{
+                width: 47px;
+                height: 40px;
+                margin:0 1rem 1rem 0 ;
+            }
+        }
+    }
+
+    &-sign{
+        width: 100%;
+        margin-top: 3rem;
+        p:first-child{
+            font-family: 'Cormorant Upright', serif;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 41px;
+            letter-spacing: 0.04rem;
+            text-transform: capitalize;
+            color: #DCCA87;
+        }
+        img{
+            width: 250px;
+            margin-top: 3rem;
+        }
+    }
+}
